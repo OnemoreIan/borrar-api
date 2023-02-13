@@ -1,0 +1,22 @@
+<div class="card">
+    <form class="space"  (ngSubmit)="envioFomr(dato1.value,dato2.value,dato3.value)" [formGroup]="allvalidatos">
+        <div class="my-4">
+            <p>Texto1</p>
+            <input type="text" name="txt1" formControlName="dato1" #dato1>
+        </div>
+
+        <div class="my-4">
+            <p>Texto2</p>
+            <input type="text" name="txt2" formControlName="dato2" #dato2>
+        </div>
+
+        <div class="my-4">
+            <p>Texto3</p>
+            <input type="text" name="txt3" formControlName="dato3" #dato3>
+        </div>
+
+        <div class="my-4">
+            <button type="submit" class="btn btn-info" [disabled]="!allvalidatos.valid">Confirmar</button>
+        </div>
+    </form>
+</div>

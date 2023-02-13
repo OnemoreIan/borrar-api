@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConsumirModule } from './consumir/consumir.module';
+import { Seccion1Module } from './seccion1/seccion1.module';
+import { DigimonesService } from './consumir/consumo/digimones.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Seccion1Module,
+    ConsumirModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DigimonesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
