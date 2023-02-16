@@ -1,0 +1,15 @@
+*{
+    color: #333;
+}
+.space-card{
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    .card{
+        background-color: none;
+    }
+}

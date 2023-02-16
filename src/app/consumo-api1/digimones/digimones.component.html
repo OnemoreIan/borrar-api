@@ -1,0 +1,12 @@
+<h2>Contenido</h2>
+<div class="card space-card">
+
+  <div class="card " *ngFor="let x of digimones">
+    <img [src]="x.img" class="card-img-top" [alt]="x.name">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{x.name}}</h5>
+      <p class="card-text">{{x.level}}</p>
+    </div>
+  </div>
+
+</div>
